@@ -1,17 +1,22 @@
 import React from "react";
 import "./App.css";
+import Home from "./pages/Home";
 import Navbar from "./components/Navbar/Navbar.js";
+
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
     <>
+      {" "}
       <Router>
-        <Navbar />
+        {" "}
+        <Navbar />{" "}
         <Switch>
-          <Route path="/" exact />
-        </Switch>
-      </Router>
+          {" "}
+          <Route path="/" exact component={Home} />{" "}
+        </Switch>{" "}
+      </Router>{" "}
     </>
   );
 }
